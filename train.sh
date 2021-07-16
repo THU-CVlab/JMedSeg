@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0 python3.7 run.py --model unet --dataset xh --mode train --cuda -e 30 -b 8 --loss ce -l 1e-3
+CUDA_VISIBLE_DEVICES=3 python3.7 run.py --model deeplab --dataset pancreas --mode train --cuda -e 50 -b 8 --loss ce -w 0.8 -l 3e-4 --aug --stn --pretrain --checkpoint checkpoints/deeplab-ssl.pkl
