@@ -132,6 +132,8 @@
 
 3. 下载一些模型必须的[ImageNet预训练权重](https://cloud.tsinghua.edu.cn/f/f299d34ed5fb4022a88c/?dl=1)，并解压至`model/`目录下.
 
+4. 如想要使用训练好的模型参数，可在[这里](https://cloud.tsinghua.edu.cn/d/e04275bb8248461a8898/)下载胰腺数据上训练完成的模型参数，也可以先下载[可视化结果](https://cloud.tsinghua.edu.cn/d/71b56f28905149a5a610/)先观察模型效果。
+
 4. 运行训练/测试/可视化
 
 ```
