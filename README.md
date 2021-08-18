@@ -123,7 +123,7 @@
 
 
 ### 下载地址
-[清华云盘](https://cloud.tsinghua.edu.cn/f/7be467b07b6f4ffe8a55/)
+[清华云盘](https://cloud.tsinghua.edu.cn/f/7be467b07b6f4ffe8a55/) 数据下载成功后将压缩包解压为 `./data` 文件夹即可。
 
 
 
@@ -212,7 +212,7 @@ optional arguments:
   --layer LAYER         layer to extract features from
   --lr LR               learning rate
   --pretrain
-  ```
+```
 
 **运行示例**
 参见`train.sh`, `batch_test.sh`, `pretrain.sh`
@@ -220,7 +220,7 @@ optional arguments:
 
 ## 四、实验结果
 ### 胰腺分割数据集
-各模型均采用相同超参数，学习率3e-4，迭代次数50次，以权重为[0.8, 0.2]的交叉熵损失函数进行训练，参见`train.sh`中dataset为pancreas的部分。结果如下
+各模型均采用相同超参数，学习率$3\times10^{-4}$，迭代次数50次，以权重为[0.8, 0.2]的交叉熵损失函数进行训练，参见`train.sh`中dataset为pancreas的部分。结果如下:
 
 | Model   | Dice   | mIoU   |
 |---------|--------|--------|
@@ -273,4 +273,4 @@ optional arguments:
   2. 中山数据集
 
       下表记录了协和数据集上训练的OneNet模型在中山数据集上的表现
-  
+
