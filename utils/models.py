@@ -11,7 +11,7 @@ modelSet = [
     'pspnet', 'danet', 'eanet', 'ocrnet', 'resunet', 'ocnet', 'attunet',
     'dense', 'dlink', 'ternaus', 'scseunet', 'r2', 'r2att', 'csnet', 'unetpp',
     'unetppbig', 'multires', 'u2net', 'u2netp', 'onenet', 'lightnet', 'cenet',
-    'setr', 'hardalter', 'lrfea', 'simple'
+    'setr', 'hardalter', 'lrfea', 'simple', 'unext'
 ]
 
 
@@ -90,6 +90,9 @@ def get_model(args):
         model = LRFEANet()
     elif args.model == 'simple':
         model = SimpleUNet()
+    elif args.model == 'unext':
+         # here we set default img_size to 512x512 (the standard size of a CT image)
+        model = UNext(args.class_num, input_channels=3, img_size=512)
     else:
         print("Error: model undefined")
         exit(0)
