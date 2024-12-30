@@ -34,3 +34,4 @@ from .CENet import CE_Net_ as CENet
 from .transformer_seg import SETRModel as SETR
 from .LRFEANet import LRFEANet
 from .SimpleUnet import SimpleUNet
+from .UNeXt import UNext
